@@ -27,4 +27,3 @@ def ROT13(n):
 		print(g)
 
 ROT13(str(input()))
-

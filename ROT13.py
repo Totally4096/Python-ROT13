@@ -7,12 +7,15 @@ def ROT13(n):
 		x = list(n)
 		b = 13
 		d = x.index(max(x))
+		str1 = "Final result: "
 		for i in range(d+1):
 			c = alphabet.index(x[i]) + b
-			if(c>25):
+			if(c > 25):
 				c = alphabet.index(x[i]) - b
+
 			g = alphabet[c]
-			print(g, end='')
+			print(str1, g, end='')
+			str1 = ''
 		print()
 
 	else:
@@ -24,6 +27,6 @@ def ROT13(n):
 			c = x-b
 
 		g = alphabet[c]
-		print(g)
+		print("Final result: ", g)
 
-ROT13(str(input()))
+ROT13(str(input("Enter a string: ")))

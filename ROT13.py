@@ -6,9 +6,9 @@ def ROT13(n):
 	if(len(n) > 1):
 		x = list(n)
 		b = 13
-		d = x.index(max(x))
+		d = len(x)-1
 		str1 = "Final result: "
-		for i in range(d+1):
+		for i in range(len(x)):
 			c = alphabet.index(x[i]) + b
 			if(c > 25):
 				c = alphabet.index(x[i]) - b

@@ -1,4 +1,5 @@
 #ROT13 test
+from __future__ import print_function
 
 def ROT13(n):
 	alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n',
@@ -7,7 +8,7 @@ def ROT13(n):
 		x = list(n)
 		b = 13
 		d = len(x)-1
-		str1 = "Final result: "
+		str1 = "Encrypted text: "
 		for i in range(len(x)):
 			c = alphabet.index(x[i]) + b
 			if(c > 25):
@@ -27,6 +28,6 @@ def ROT13(n):
 			c = x-b
 
 		g = alphabet[c]
-		print("Final result: ", g)
+		print("Encrypted text: {}".format(g))
 
-ROT13(str(input("Enter a string: ")))
+ROT13(str(input("Enter a plain text string: ")))

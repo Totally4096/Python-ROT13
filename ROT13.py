@@ -1,5 +1,5 @@
 #ROT13 test
-from __future__ import *
+from __future__ import print_function
 
 def ROT13(n):
 	alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n',

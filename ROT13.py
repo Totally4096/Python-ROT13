@@ -7,7 +7,6 @@ def ROT13(n):
 	if(len(n) > 1):
 		x = list(n)
 		b = 13
-		d = len(x)-1
 		str1 = "Encrypted text: "
 		for i in range(len(x)):
 			c = alphabet.index(x[i]) + b

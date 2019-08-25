@@ -15,7 +15,7 @@ def ROT13():
     messagebox.showinfo("Encrypted text", ''.join(encryptedString))
 
 top = Tk()
-top.geometry("200x200")
+top.geometry("150x150")
 top.resizable(FALSE, FALSE)
 
 nLabel = Label(top, text="Input a string")
@@ -26,5 +26,5 @@ n.pack()
 Encrypt = Button(top, text="Encrypt", command=ROT13)
 Quit = Button(top, text="Quit", command=top.destroy)
 
-Quit.place(x=0, y=175)
-Encrypt.place(x=150, y=175)
+Quit.place(x=0, y=125)
+Encrypt.place(x=100, y=125)

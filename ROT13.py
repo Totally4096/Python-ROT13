@@ -30,3 +30,8 @@ def ROT13(n):
 		print("Encrypted text: {}".format(g))
 
 ROT13(str(input("Enter a plain text string: ")))
+
+try:
+    input("Press Enter to continue...")
+except SyntaxError:
+    pass

@@ -28,3 +28,5 @@ Quit = Button(top, text="Quit", command=top.destroy)
 
 Quit.place(x=0, y=125)
 Encrypt.place(x=100, y=125)
+
+top.mainloop()

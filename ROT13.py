@@ -11,7 +11,7 @@ def ROT13(s):
          print(alphabet[encryptedCharacter], end='')
      print()
      
-ROT13(input())  
+ROT13(input('Enter a string: '))  
 try:
      input('Press Enter to continue...')
 except SyntaxError:

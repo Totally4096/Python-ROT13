@@ -12,3 +12,7 @@ def ROT13(s):
      print()
      
 ROT13(input())  
+try:
+     input('Press Enter to continue...')
+except SyntaxError:
+     pass

@@ -2,8 +2,8 @@ from tkinter import *
 from tkinter import messagebox
 
 def ROT13():
-    alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n',
-				'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+    alphabet =  'abcdefghijklmnopqrstuvwxyz'
+
     nStr = str(n.get())
     keyShift = 13
     encryptedString = []

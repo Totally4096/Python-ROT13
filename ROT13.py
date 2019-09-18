@@ -4,6 +4,7 @@ def ROT13(s):
      alphabet = 'abcdefghijklmnopqrstuvwxyz'
      
      keyShift = 13
+     print('Encrypted text: ', end=' ')
      for i in range(len(s)):
          encryptedCharacter = alphabet.index(s[i]) + keyShift
          if encryptedCharacter > 25:

@@ -2,6 +2,7 @@ from __future__ import print_function
 
 def ROT13(s):
      alphabet = 'abcdefghijklmnopqrstuvwxyz'
+     s = s.lower()
      
      keyShift = 13
      print('Encrypted text:', end=' ')

@@ -4,7 +4,7 @@ from tkinter import messagebox
 def ROT13():
     alphabet =  'abcdefghijklmnopqrstuvwxyz'
 
-    nStr = str(n.get())
+    nStr = str(n.get()).lower()
     keyShift = 13
     encryptedString = []
     for i in range(len(nStr)):

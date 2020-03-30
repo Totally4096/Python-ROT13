@@ -7,11 +7,14 @@ def ROT13():
     nStr = str(n.get()).lower()
     keyShift = 13
     encryptedString = []
-    for i in range(len(nStr)):
-        shiftLetter = alphabet.index(nStr[i]) + keyShift
-        if(shiftLetter > 25):
-            shiftLetter = alphabet.index(nStr[i]) - keyShift
-        encryptedString.append(alphabet[shiftLetter])
+    for i in nStr:
+        if i.isalpha():
+            shiftLetter = alphabet.index(i) + keyShift
+            if(shiftLetter > 25):
+                shiftLetter = alphabet.index(i) - keyShift
+            encryptedString.append(alphabet[shiftLetter])
+        else:
+            continue
     messagebox.showinfo("Encrypted text", ''.join(encryptedString))
 
 top = Tk()

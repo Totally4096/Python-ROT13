@@ -1,16 +1,20 @@
+#!/usr/bin/env python
 from __future__ import print_function
 
 def ROT13(s):
      alphabet = 'abcdefghijklmnopqrstuvwxyz'
-     s = s.lower()
+     s = s.lower().strip()
      
      keyShift = 13
      print('Encrypted text:', end=' ')
-     for i in range(len(s)):
-         encryptedCharacter = alphabet.index(s[i]) + keyShift
-         if encryptedCharacter > 25:
-             encryptedCharacter = alphabet.index(s[i]) - keyShift
-         print(alphabet[encryptedCharacter], end='')
+     for i in s:
+         if i.isalpha():
+            encryptedCharacter = alphabet.index(i) + keyShift
+            if encryptedCharacter > 25:
+                 encryptedCharacter = alphabet.index(i) - keyShift
+            print(alphabet[encryptedCharacter], end='')
+         else:
+            continue
      print()
      
 ROT13(input('Enter a string: '))  

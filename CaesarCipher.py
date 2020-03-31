@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 from __future__ import print_function
 
-def CC(s, keyShift=1):
+def CC(s, keyShift):
      alphabet = 'abcdefghijklmnopqrstuvwxyz'
      s = s.lower()
      

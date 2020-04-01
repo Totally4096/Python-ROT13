@@ -14,7 +14,7 @@ def ROT13(s):
                  encryptedCharacter = alphabet.index(i) - keyShift
             print(alphabet[encryptedCharacter], end='')
          else:
-            continue
+            print(i, end='')
      print()
      
 ROT13(input('Enter a string: '))  

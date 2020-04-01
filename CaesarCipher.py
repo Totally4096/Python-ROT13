@@ -13,7 +13,7 @@ def CC(s, keyShift):
                  encryptedCharacter = alphabet.index(i) - keyShift
             print(alphabet[encryptedCharacter], end='')
          else:
-            continue
+            print(i, end='')
      print()
      
 CC(input('Enter a string: '), int(input('Enter key shift: ')))  
